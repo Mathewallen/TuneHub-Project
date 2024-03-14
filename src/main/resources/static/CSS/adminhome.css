@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #1c2331, #4a5568); /* Purple to Cyan gradient */
+}
+
+.container {
+    background: linear-gradient(45deg, #6200ea, #00bcd4); /* Same gradient for the container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff; /* White text color */
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button, input[type="submit"] {
+    background-color: #fff; /* White button background */
+    color: #6200ea; /* Purple button text */
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #f2f2f2; /* Light gray on hover */
+}
+
+/* Style for the "Home" button */
+form.home-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin-right: 10px; /* Add margin to the right to separate it from the container */
+}
+
+/* Style for the "LogOut" button */
+form:last-child {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}

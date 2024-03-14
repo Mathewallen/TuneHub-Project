@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Home</title>
+    <link rel="stylesheet"  Th:href="@{CSS/customerhome.css}">
+</head>
+<body>
+    <form action="/logOut" class="logout-button">
+        <input type="submit" value="logOut">
+    </form>
+
+    <div class="container fancy-border">
+        <h1>Customer Home</h1>
+        <form action="/exploresongs">
+            <input type="submit" value="Explore Song">
+        </form>
+        <form action="/customerhome">
+            <input type="submit" value="Home">
+        </form>
+    </div>
+</body>
+</html>

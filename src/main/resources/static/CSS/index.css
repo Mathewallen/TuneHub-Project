@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #1c2331, #4a5568);
+}
+
+.container {
+    background: url('https://img.freepik.com/free-photo/volumetric-musical-background-with-treble-clef-notes-generative-ai_169016-29576.jpg') center/100% 100% no-repeat;
+    border-radius: 15px;
+    padding: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.action-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #6200ea;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #4d00cb;
+}
+
+.fancy-border {
+    position: relative;
+    display: inline-block;
+}
+
+.fancy-border::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(to right, #00bcd4, #6200ea);
+    z-index: -1;
+    border-radius: 20px;
+}

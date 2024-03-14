@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" Th:href="@{CSS/viewcustomersongs.css}">
+    <title>My Music</title>
+</head>
+<body>
+    <form class="home-button" action="/customerhome">
+        <input type="submit" value="Home">
+    </form>
+
+    <form>
+        <h1>My Music</h1>
+        <table border="1">
+            <tr>
+                <td>name</td>
+                <td>artist</td>
+                <td>genre</td>
+                <td>link</td>
+            </tr>
+            <tr th:each="songs:${songs}">
+                <td th:text="${songs.name}"></td>
+                <td th:text="${songs.artist}"></td>
+                <td th:text="${songs.genre}"></td>
+                <td>
+                    <div class="audio-container">
+                        <audio controls>
+                            <source th:src="${songs.link}" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

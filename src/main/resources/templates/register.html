@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" Th:href="@{CSS/register.css}">
+</head>
+<body>
+    <div>
+        <form action="register" method="post">
+            <label>User Name:</label>
+            <input type="text" placeholder="e.g., Emil" name="username" required/>
+            <label>Email ID:</label>
+            <input type="email" placeholder="e.g., emil@gmail.com" name="email" required/>
+            <label>Password:</label>
+            <input type="password" name="password" required/>
+            
+            <!-- Gender Section -->
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male"/>Male
+                <input type="radio" name="gender" value="Female"/>Female
+                <input type="radio" name="gender" value="Others"/>Others
+            </div>
+
+            <!-- Role Section -->
+            <label>Role:</label>
+            <div class="radio-group">
+                <input type="radio" name="role" value="Admin"/>Administrator
+                <input type="radio" name="role" value="Customer"/>Customer
+            </div>
+            
+            <label>Address:</label>
+            <textarea name="address"></textarea>
+            
+            <input type="submit" value="Register"/>
+        </form>
+    </div>
+</body>
+</html>

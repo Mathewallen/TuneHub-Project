@@ -1,0 +1,61 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #c0c0c0;
+}
+
+audio {
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position:relative;
+    top:-35px;
+    left: 1050px;
+}
+
+a:hover {
+    background-color: #555;
+}
+.blue-button {
+	    position:relative;
+	bottom:-40px;
+        background-color: #3498db; /* Set the background color to a shade of blue */
+        color: #fff; /* Set the text color to white */
+        padding: 10px 30px; /* Add some padding for better aesthetics */
+        border: none; /* Remove the border */
+        cursor: pointer; /* Add a pointer cursor on hover */
+        text-decoration: none; /* Remove the default text decoration */
+        font-size: 16px; /* Set the font size */
+        border-radius: 5px; /* Add a slight border-radius for rounded corners */
+    }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Admin</title>
+    <link rel="stylesheet" Th:href="@{CSS/adminhome.css}">
+</head>
+<body>
+    <form action="/home" class="home-button">
+        <input type="submit" value="Home">
+    </form>
+
+    <div class="container">
+        <h1>Welcome Admin</h1>
+        <form action="mapSong" method="get">
+            <button type="submit">ADD SONGS</button>
+        </form>
+        <form action="mapViewSongs" method="get">
+            <button type="submit">VIEW SONGS</button>
+        </form>
+        <form action="mapCreatePlaylist" method="get">
+            <button type="submit">CREATE PLAYLIST</button>
+        </form>
+        <form action="mapViewPlaylist" method="get">
+            <button type="submit">VIEW PLAYLIST</button>
+        </form>
+        <form action="/logOut">
+            <input type="submit" value="LogOut">
+        </form>
+    </div>
+</body>
+</html>
